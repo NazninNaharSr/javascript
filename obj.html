@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Objects</h2>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="myImage"></p>
+
+<script>
+// Create an object:
+var person = {
+  firstName: "Naznin",
+  lastName: "Nahar",
+  age: 22,
+  eyeColor: "brown",
+  image: ""
+};
+
+// Display some data from the object:
+document.getElementById("demo1").innerHTML =
+person.firstName + " is " + person.age + " years old.";
+document.getElementById("demo2").innerHTML =
+person.firstName + "  has " + person.eyeColor + " eyes";
+document.getElementById("myImage").src='shinchan.jpg';
+</script>
+
+<img id="myImage" src="shinchan.jpg" style="width:500px">
+</script>
+
+</body>
+</html>
