@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+  var x = document.forms["form"]["fname"].value;
+  
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+  var y= document.forms["form"]["fpass"].value;
+  if (y=="") 
+  {
+  	alert("Password must be filled out");
+    return false;
+  }
+}
+</script>
+</head>
+<body>
+
+<form name="form" onsubmit="return validateForm()" method="post" action="registration.php">
+  Userame: <input type="text" name="fname"><br>
+  Password:<input type="password" name="fpass"><br>
+  <input type="checkbox" placeholder="Remember Me" name="Remember Me" required>Remember Me<br>
+  <input type="submit" value="Submit">
+  <a href="forget_pass.php" target="_blank">Forget Password?</a>
+  
+</form>
+
+</body>
+</html>
